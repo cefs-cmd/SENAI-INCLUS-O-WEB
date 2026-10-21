@@ -1,0 +1,271 @@
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 24px 28px;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+        /* Cabeçalho para ficar alinhado um ao lado do outro*/
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+
+        padding: 20px 12px;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        flex-direction: column;
+
+        color: #174b9b;
+        font-size: 23px;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 0.85;
+        letter-spacing: -1px;
+        margin: 10px;
+    }
+
+    .frase-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 257px;
+    width: calc(100% - 230px);
+    box-sizing: border-box;
+    }
+
+    .frase-inicio h2 {
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+    .acecibilidade{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    width: calc(100% 230px);
+    margin-left: 256px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mudando as cores,alinhamento e o tamanho*/
+.contraste,
+.tamanho-fonte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border: 1px solid #cbddeb;
+    border-radius: 20px;
+    padding: 4px 18px;
+    cursor: pointer;
+}
+
+.acecibilidade2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: calc(100% - 230px);
+    margin-left: 191px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/* Organiza as opções na vertical */
+.etapas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+
+    width: 190px;
+}
+
+/* Estilo de cada opção */
+.opcao-menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    width: 100%;
+    min-height: 47px;
+    padding: 12px 18px;
+    box-sizing: border-box;
+
+    background-color: #f8fafc;
+    border: 1px solid #4285f4;
+    border-radius: 10px;
+
+    color: #005bbb;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+}
+
+/* Padroniza o tamanho dos ícones */
+.opcao-menu i {
+    width: 18px;
+    min-width: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #627994;
+}
+
+/* Opção selecionada */
+.opcao-menu.ativo {
+    background-color: #0757b5;
+    color: white;
+    border-color: #0757b5;
+}
+
+.opcao-menu.ativo i {
+    color: white;
+}
+
+/* Botão Sair */
+.opcao-menu.sair {
+    color: #ff3333;
+    background-color: #fff4f4;
+    border-color: #ffd5d5;
+}
+
+.opcao-menu.sair i {
+    color: #ff3333;
+}
+
+
+/* Títulos acima das tabelas */
+.titulo-tabela {
+    font-size: 10px;
+    font-weight: bold;
+    color: #111111;
+    margin: 18px 0 5px;
+}
+
+/* Estilo geral das tabelas */
+.tabela-painel {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: #333333;
+
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+
+/* Cabeçalho */
+.tabela-painel thead th {
+    background-color: #eeeeee;
+    font-weight: bold;
+    text-align: left;
+
+    padding: 8px 1px;
+    border: 1px solid #999999;
+}
+
+/* Células */
+.tabela-painel tbody td {
+    padding: 8px 7px;
+    text-align: left;
+
+    border: 1px solid #aaaaaa;
+    font-weight: normal;
+}
+
+/* Primeira notificação destacada */
+.tabela-notificacoes .linha-destaque {
+    background-color: #e5edf8;
+}
+
+/* Situações pendentes */
+.tabela-painel .pendente {
+    color: #8a1c1c;
+    font-weight: bold;
+}
+
+/* Espaço entre as duas tabelas */
+.tabela-ciencia {
+    margin-bottom: 20px;
+}
+
+
+/* MENU À ESQUERDA E TABELAS À DIREITA */
+.lado {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    align-items: start;
+    gap: 26px;
+
+    width: calc(100% - 80px);
+    max-width: 1250px;
+
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Menu da esquerda */
+.etapas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;
+    margin: 0;
+    min-width: 0;
+}
+
+/* Área que recebe as DUAS tabelas */
+.area-tabelas {
+    width: 100%;
+    min-width: 0;
+}
+
+/* Cada tabela ocupa sua própria linha */
+.bloco-tabela {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 16px;
+}
+
+/* Títulos */
+.titulo-tabela {
+    font-size: 10px;
+    font-weight: bold;
+    color: #111111;
+    margin: 0 0 5px;
+}
+
+
+/* Cabeçalho */
+.tabela-painel thead th {
+    background-color: #eeeeee;
+    font-weight: bold;
+    text-align: left;
+
+    padding: 8px 7px;
+    border: 1px solid #999999;
+}
